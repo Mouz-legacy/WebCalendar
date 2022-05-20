@@ -1,90 +1,128 @@
-<div class="wrapper">
-  <main>
-    <div class="toolbar">
-      <div class="toggle">
-        <div class="toggle__option">week</div>
-        <div class="toggle__option toggle__option--selected">month</div>
-      </div>
-      <div class="current-month">June 2016</div>
-    </div>
-    <div class="calendar">
-      <div class="calendar__header">
-        <div>mon</div>
-        <div>tue</div>
-        <div>wed</div>
-        <div>thu</div>
-        <div>fri</div>
-        <div>sat</div>
-        <div>sun</div>
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">1</div>
-        <div class="calendar__day day">2</div>
-        <div class="calendar__day day">3</div>
-        <div class="calendar__day day">4</div>
-        <div class="calendar__day day">5</div>
-        <div class="calendar__day day">6</div>
-        <div class="calendar__day day">7</div>
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">8</div>
-        <div class="calendar__day day">9</div>
-        <div class="calendar__day day">10</div>
-        <div class="calendar__day day">11</div>
-        <div class="calendar__day day">12</div>
-        <div class="calendar__day day">13</div>
-        <div class="calendar__day day">14</div>        
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">15</div>
-        <div class="calendar__day day">16</div>
-        <div class="calendar__day day">17</div>
-        <div class="calendar__day day">18</div>
-        <div class="calendar__day day">19</div>
-        <div class="calendar__day day">20</div>
-        <div class="calendar__day day">21</div>    
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">22</div>
-        <div class="calendar__day day">23</div>
-        <div class="calendar__day day">24</div>
-        <div class="calendar__day day">25</div>
-        <div class="calendar__day day">26</div> 
-        <div class="calendar__day day">27</div> 
-        <div class="calendar__day day">28</div> 
-      </div>
-      <div class="calendar__week">
-        <div class="calendar__day day">29</div>
-        <div class="calendar__day day">30</div>
-        <div class="calendar__day day">31</div>
-        <div class="calendar__day day">1</div>
-        <div class="calendar__day day">2</div>
-        <div class="calendar__day day">3</div>
-        <div class="calendar__day day">4</div>
-      </div>
-    </div>
-  </main>
-  <sidebar>
+<div class="container">
+  <sidebar id="sidebar" class="sidebar">
     <div class="avatar">
-      <div class="avatar__img">
-        <img src="https://picsum.photos/70" alt="avatar">
-      </div>
-      <div class="avatar__name">John Smith</div>
+      <img class="avatar_img" src="https://picsum.photos/70" alt="avatar">
+      <div class="avatar_name">John Smith</div>
     </div>
-    <nav class="menu">
-      <a class="menu__item" href="#">
-        <i class="menu__icon fa fa-home"></i>
-        <span class="menu__text">Account</span>
-      </a>
-      <a class="menu__item menu__item--active" href="#">
-        <i class="menu__icon fa fa-calendar"></i>
-        <span class="menu__text">Calendar</span>
-      </a>
-      <a class="menu__item" href="#">
-        <i class="menu__icon fa fa-bar-chart"></i>
-        <span class="menu__text">Settings</span>
-      </a>
+    <nav class="menu_navigation">
+        <a class="menu_item" href="#">
+            <i class="menu_icon"></i>
+            <span class="menu_text">Account</span>
+        </a>
+        <a class="menu_item menu_item--active" href="#">
+            <i class="menu_icon"></i>
+            <span class="menu_text">Month</span>
+        </a>
+        <a class="menu_item" href="#">
+            <i class="menu_icon"></i>
+            <span class="menu_text">Day</span>
+        </a>
     </nav>
-    <div class="copyright">copyright &copy; 2020</div>
-  </sidebar>
-</div>
+</sidebar>
+    <div class="calendar">
+      <div class="front">
+        <div class="current-date">
+          <h1>Friday 15th</h1>
+          <h1>January 2016</h1> 
+        </div>
+
+        <div class="current-month">
+          <ul class="week-days">
+            <li>MON</li>
+            <li>TUE</li>
+            <li>WED</li>
+            <li>THU</li>
+            <li>FRI</li>
+            <li>SAT</li>
+            <li>SUN</li>
+          </ul>
+
+          <div class="weeks">
+            <div class="first">
+              <span class="last-month">28</span>
+              <span class="last-month">29</span>
+              <span class="last-month">30</span>
+              <span class="last-month">31</span>
+              <span>01</span>
+              <span>02</span>
+              <span>03</span>
+            </div>
+
+            <div class="second">
+              <span>04</span>
+              <span>05</span>
+              <span class="event">06</span>
+              <span>07</span>
+              <span>08</span>
+              <span>09</span>
+              <span>10</span>
+            </div>
+
+            <div class="third">
+              <span>11</span>
+              <span>12</span>
+              <span>13</span>
+              <span>14</span>
+              <span class="active">15</span>
+              <span>16</span>
+              <span>17</span>
+            </div>
+
+            <div class="fourth">
+              <span>18</span>
+              <span>19</span>
+              <span>20</span>
+              <span>21</span>
+              <span>22</span>
+              <span>23</span>
+              <span>24</span>
+            </div>
+
+            <div class="fifth">
+              <span>25</span>
+              <span>26</span>
+              <span>27</span>
+              <span>28</span>
+              <span>29</span>
+              <span>30</span>
+              <span>31</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="back">
+        <input placeholder="What's the event?">
+        <div class="info">
+          <div class="date">
+            <p class="info-date">
+            Date: <span>Jan 15th, 2016</span>
+            </p>
+            <p class="info-time">
+              Time: <span>6:35 PM</span>
+            </p>
+          </div>
+          <div class="address">
+            <p>
+              Address: <span>129 W 81st St, New York, NY</span>
+            </p>
+          </div>
+          <div class="observations">
+            <p>
+              Observations: <span>Be there 15 minutes earlier</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="save">
+            Save <i class="ion-checkmark"></i>
+          </button>
+          <button class="dismiss">
+            Dismiss <i class="ion-android-close"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
