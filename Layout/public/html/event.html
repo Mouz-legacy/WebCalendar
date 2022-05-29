@@ -1,0 +1,41 @@
+<div class="body-login">
+  <form class="login-form" action="./" method="POST">
+    <div class="login-form__logo-container">
+      <img class="login-form__logo" src="../images/logo.png" alt="Logo" />
+    </div>
+    <div class="login-form__content">
+      <form id="form-event">
+        <div class="login-form__header">Create event</div>
+        <input
+          id="members"
+          class="login-form__input"
+          type="text"
+          name="dc_username"
+          placeholder="Enter description with separator ','"
+        />
+        <input
+          id="date"
+          class="login-form__input"
+          type="text"
+          name="dc_username"
+          placeholder="Enter date in format 'Date/Month/Year'"
+        />
+        <button
+          id="event-create"
+          class="login-form__button__login"
+          type="submit"
+          href="/calendar"
+        >
+          Create
+        </button>
+        <button
+          id="calendar-back"
+          class="login-form__button__login"
+          type="submit"
+        >
+          Back
+        </button>
+      </form>
+    </div>
+  </form>
+</div>

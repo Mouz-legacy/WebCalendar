@@ -1,144 +1,148 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
 
-body {
-    height: 100%;
-    overflow: hidden;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
+  list-style: none;
 }
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
-    list-style: none;
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 main {
-    overflow: hidden;
-    height: 100%;
-    background-color: #009578;
+  overflow: hidden;
+  height: 100%;
+  background-color: #009578;
 }
 
-li, a, button {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-    background-color: transparent;
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 header {
-    display: flex;
-    background-color: #24252A;
-    width: 100%;
-    height: 90px;
-    justify-content: space-between;
+  display: flex;
+  background-color: #24252a;
+  width: 100%;
+  height: 90px;
+  justify-content: space-between;
 }
 
 .container-wrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-logo {
-    width: 50px;
-    height: 40px;
-    display: block;
-    margin: 20px 0px;
-    background: url("../images/logo.png") no-repeat;
-  }
-  
-.header-logo:hover {
-    filter: invert(99%) hue-rotate(317deg) brightness(117%) contrast(100%);
+  width: 50px;
+  height: 40px;
+  display: block;
+  margin: 20px 0px;
 }
 
 .header-navigation {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
 }
 
 .navigation-links {
-    list-style: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a;
 }
-  
-.navigation-links li {
-    display: inline-block;
-    padding: 0px 20px;
+
+.navigation-links button {
+  display: inline-block;
+  border: none;
+  margin: 10px;
 }
-  
-.navigation-links li a {
-    transition: all 0.3s ease 0s;
+
+.navigation-links button a {
+  transition: all 0.3s ease 0s;
 }
-  
-.navigation-links li a:hover {
-    color:#009578;
+
+.navigation-links button a:hover {
+  color: #009578;
 }
-  
+
 .button-header {
-    padding: 9px 25px;
-    background-color: #009578;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
+  padding: 9px 25px;
+  background-color: #009578;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
-  
+
 .button-header:hover {
-    background-color: #11705d;
+  background-color: #11705d;
 }
-  
+
+.collapsed-button .button-header {
+  visibility: hidden;
+}
+
 .header-logo {
-    width: 50px;
-    height: 40px;
-    display: block;
-    margin: 20px 0px;
-    background: url("./assets/logo.svg") no-repeat;
-}
-  
-.header-logo:hover {
-    filter: invert(99%) sepia(0%) saturate(2%) hue-rotate(317deg) brightness(117%)
-      contrast(100%);
+  width: 50px;
+  height: 40px;
+  display: block;
+  margin: 20px 0px;
 }
 
 .error-info {
-   font-size: 25px;
-   background: #009578; 
+  font-size: 25px;
+  background: #009578;
 }
 
 .mobile-menu-button-line {
-    width: 35px;
-    height: 5px;
-    margin: 6px 0;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+}
+
+.event-data {
+  font-size: 40px;
+}
+
+.day-events dt {
+  background: #eeeeee;
 }

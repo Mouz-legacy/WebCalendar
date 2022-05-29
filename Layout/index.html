@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/calendar.css">
-    <link rel="stylesheet" href="./css/login.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="container-wrapper">
-                <div class="header-container">
-                    <img class="header-logo" src="../images/logo.png">
-                    <nav class="header-navigation">
-                        <ul class="navigation-links">
-                            <li><a href="/calendar" onclick="route()">Calendar</a></li>
-                            <li><a href="/login" onclick="route()">Login</a></li>
-                        </ul>
-                        <button class="button-header"><a href="/register" onclick="route()">Register</a></button>  
-                    </nav>
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>  
-                </div>
-            </div>
-        </header>
-        <main id="main-page" class="main">
-            
-        </main>
+      <header class="header">
+        <div class="container-wrapper">
+          <div class="header-container">
+            <img class="header-logo" src="../images/logo.png" />
+            <nav class="header-navigation">
+              <ul class="navigation-links">
+                <button id="calendar-id">
+                  <a href="/calendar" onclick="route()">Calendar</a>
+                </button>
+                <button id="login-id">
+                  <a id="login-logout-id" href="/login" onclick="route()"
+                    >Login</a
+                  >
+                </button>
+                <button id="register-id" class="button-header">
+                  <a href="/register" onclick="route()">Register</a>
+                </button>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main id="main-page" class="main"></main>
     </div>
-    <script src="js/router.js"></script>
-</body>
+  </body>
 </html>
